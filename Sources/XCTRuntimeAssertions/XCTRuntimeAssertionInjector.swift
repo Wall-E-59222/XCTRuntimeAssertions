@@ -11,7 +11,7 @@ import Foundation
 
 
 private final class RuntimeInjections: Sendable {
-    private nonisolated var injected: [XCTRuntimeAssertionInjector] = []
+    private var injected: [XCTRuntimeAssertionInjector] = []
     private let lock = NSLock()
 
     @inlinable var isEmpty: Bool {
